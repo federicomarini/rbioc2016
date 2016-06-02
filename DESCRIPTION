@@ -1,0 +1,16 @@
+Package: rbioc2016
+Type: Package
+Title: R/Bioconductor Course 2016
+Version: 0.1
+Date: 2016-006-02
+Authors@R: c(person("Federico", "Marini", role = c("aut", "cre"), email = "marinif@uni-mainz.de"))
+Maintainer: Federico Marini <marinif@uni-mainz.de>
+VignetteBuilder: knitr
+LazyData: TRUE
+Description: rbioc2016 contains the datasets used in the course and other extra
+    material.
+License: GPL (>= 2)
+Depends:
+    R (>= 3.3)
+URL: https://github.com/federicomarini/rbioc2016/
+RoxygenNote: 5.0.1
