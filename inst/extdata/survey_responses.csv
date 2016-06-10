@@ -1,0 +1,19 @@
+Q1,Q2,Q3,Q4,Q5,Q6,Q7
+28,PhD student,intermediate,intermediate,good,I am a regular user,Learn Parallelization with R (and Bioconductor)
+27,PhD student,poor,intermediate,poor,I know it exists,NA
+33,Postdoc,good,good,good,I know it exists,use R scripts in parallel context (ex: alignments in RNA-seq)
+32,PhD student,poor,poor,poor,Is this supposed to be in the cloud?!,"Id like to gather practise to analyse count data and develope the necessary data design. Additionally, it would be interesting to get to now how to find putative novel miRNAs."
+29,PhD student,none,poor,poor,I know it exists,Possible I will use R for editing RNA-seq data
+33,Postdoc,intermediate,intermediate,intermediate,Once in a while i used it,"I would describe myself as an advanced beginner, I am actively using R now to look (mostly) at count tables from NGS data and make plots. I am especially interested in the Bioconductor and parallelization in R section, this is new for me."
+40,Postdoc,good,good,intermediate,I am a regular user,NA
+23,Master student/else,poor,poor,good,I know it exists,"Get to know R better, basic commands"
+27,PhD student,none,poor,intermediate,I know it exists,To look if I can process my sequencing data on my own using R
+23,Master student/else,poor,poor,poor,Is this supposed to be in the cloud?!,"I would like to learn more about R, especially how to use it in biomedial research. Im in the 2nd Semester of the Rasterprogramm biomedicine, last Semester I had two weeks bioinformatics and we used to work with R for statistics/ChIP-Seq/microarray-data analysis, but the time was too short, to go deep into it, we just scratched the surface. So now I wish to learn some more, would be great, if I could work with the programme by myself, for example for the masterthesis."
+35,Postdoc,poor,poor,intermediate,I know it exists,learn more about R
+34,Master student/else,poor,pro,poor,I know it exists,Brush up on some R knowledge and maybe get some different perspective on Genome processing
+31,Postdoc,none,none,intermediate,Is this supposed to be in the cloud?!,to get a good and understandable introduction into R programming and bioinformatics
+27,PhD student,none,poor,poor,I know it exists,learning how to work with R
+24,Master student/else,poor,intermediate,intermediate,I know it exists,To learn the basics of R programming
+28,PhD student,none,poor,poor,I know it exists,NA
+28,Master student/else,intermediate,intermediate,intermediate,I know it exists,better understanding of R and to extend my knowledge
+39,Postdoc,good,intermediate,good,I am a regular user,Mainly interested in parallel computing options
