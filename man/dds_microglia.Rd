@@ -5,12 +5,12 @@
 \alias{dds_microglia}
 \title{RNA-seq from microglia cells}
 \description{
-The \code{\link{SummarizedExperiment}} object for Bruttger et al, Immunity 2015. Three condition were assessed, namely bone marrow macrophages, wild type microglia, and repopulating microglia (GEO accession: GSE68376)
+The \code{SummarizedExperiment} object for Bruttger et al, Immunity 2015. Three condition were assessed, namely bone marrow macrophages, wild type microglia, and repopulating microglia (GEO accession: GSE68376)
 }
 \details{
 Read counts per gene for the RNA-seq experiment experiment performed in PMID: 26163371.
 Interleukin-1 signaling is involved in local self-renewal and maintenance of microglia.
-During early embryogenesis microglia arise from yolk sac progenitors populating the developing CNS, where they are maintained as tissue-resident macrophages throughout the organism’s lifespan.
+During early embryogenesis microglia arise from yolk sac progenitors populating the developing CNS, where they are maintained as tissue-resident macrophages throughout the organism's lifespan.
 Here, we describe an experimental system that allows the specific conditional ablation of microglia in vivo.
 Strikingly, we found that the microglia compartment was reconstituted within one week following depletion. Microglia repopulation relied entirely on a CNS-resident, internal pool and was independent from bone marrow-derived precursors.
 Newly formed microglia were found in highly proliferative, organized micro-clusters that dissolve once steady state was achieved. Gene expression profiling revealed prominent expression of Interleukin-1 (IL-1) receptor in proliferating microglia.
