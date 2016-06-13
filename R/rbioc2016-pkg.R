@@ -19,14 +19,14 @@ NULL
 #'
 #' The following questions were asked to the participants:
 #' \itemize{
-#'  \item{How old are you? Continuous value}
-#'  \item{What is you current academic level Categorical variable; choices: PI/Professor/Group leader or similar,
+#'  \item{Q1: How old are you? Continuous value}
+#'  \item{Q2: What is you current academic level Categorical variable; choices: PI/Professor/Group leader or similar,
 #'  Postdoc,PhD student,Master student/else}
-#'  \item{What is your current knowledge level of R? Categorical variable; choices: pro,good,intermediate,poor,none}
-#'  \item{What is your knowledge of programming languages in general? Categorical variable; choices: pro,good,intermediate,poor,none}
-#'  \item{What is your experience level with genomics and RNA-seq data? Categorical variable; choices: pro,good,intermediate,poor,genoWhat?}
-#'  \item{How familiar are you with mogon and parallel computing? Categorical variable; choices: I am a regular user,Once in a while i used it,I know it exists,I heard we had some servers around,Is this supposed to be in the cloud?!}
-#'  \item{What are your expectations from the course? Free text input}
+#'  \item{Q3: What is your current knowledge level of R? Categorical variable; choices: pro,good,intermediate,poor,none}
+#'  \item{Q4: What is your knowledge of programming languages in general? Categorical variable; choices: pro,good,intermediate,poor,none}
+#'  \item{Q5: What is your experience level with genomics and RNA-seq data? Categorical variable; choices: pro,good,intermediate,poor,genoWhat?}
+#'  \item{Q6: How familiar are you with mogon and parallel computing? Categorical variable; choices: I am a regular user,Once in a while i used it,I know it exists,I heard we had some servers around,Is this supposed to be in the cloud?!}
+#'  \item{Q7: What are your expectations from the course? Free text input}
 #' }
 #'
 #' @author Federico Marini, \email{marinif@@uni-mainz.de}, 2016
@@ -55,6 +55,33 @@ NULL
 #' @author Federico Marini (\email{marinif@@uni-mainz.de}),
 #' Julia Bruttger, 2016
 #' @name dds_microglia
+#' @docType data
+NULL
+
+
+
+#' A list of microglia signature genes
+#'
+#' A curated list of microglia signature genes, extracted from Butovsky et al (2014). Housekeeping genes were left out.
+#' This list is represented on the MG400 microglial chip
+#'
+#'
+#' @references Oleg Butovsky, Mark P Jedrychowski,	Craig S Moore, Ron Cialic,	Amanda J Lanser, Galina Gabriely,	Thomas Koeglsperger,	Ben Dake,	Pauline M Wu,	Camille E Doykan,	Zain Fanek,	LiPing Liu,	Zhuoxun Chen,	Jeffrey D Rothstein, Richard M Ransohoff, Steven P Gygi,	Jack P Antel, Howard L Weiner, Identification of a unique TGF-beta-dependent molecular and functional signature in microglia, Nature Neuroscience 17, 131-143 (2014)
+#'
+#' @author Federico Marini (\email{marinif@@uni-mainz.de})
+#' @name mg400signatureGenes
+#' @docType data
+NULL
+
+#' A subset of a list of microglia signature genes, split by location/function
+#'
+#' A subset of a list of microglia signature genes, split by location/function, extracted from Butovsky et al (2014). Housekeeping genes were left out.
+#'
+#'
+#' @references Oleg Butovsky, Mark P Jedrychowski,	Craig S Moore, Ron Cialic,	Amanda J Lanser, Galina Gabriely,	Thomas Koeglsperger,	Ben Dake,	Pauline M Wu,	Camille E Doykan,	Zain Fanek,	LiPing Liu,	Zhuoxun Chen,	Jeffrey D Rothstein, Richard M Ransohoff, Steven P Gygi,	Jack P Antel, Howard L Weiner, Identification of a unique TGF-beta-dependent molecular and functional signature in microglia, Nature Neuroscience 17, 131-143 (2014)
+#'
+#' @author Federico Marini (\email{marinif@@uni-mainz.de})
+#' @name mg400bylocation
 #' @docType data
 NULL
 

@@ -10,14 +10,14 @@ The results of the pre-course survey, arranged in a \code{data.frame} object.
 \details{
 The following questions were asked to the participants:
 \itemize{
- \item{How old are you? Continuous value}
- \item{What is you current academic level Categorical variable; choices: PI/Professor/Group leader or similar,
+ \item{Q1: How old are you? Continuous value}
+ \item{Q2: What is you current academic level Categorical variable; choices: PI/Professor/Group leader or similar,
  Postdoc,PhD student,Master student/else}
- \item{What is your current knowledge level of R? Categorical variable; choices: pro,good,intermediate,poor,none}
- \item{What is your knowledge of programming languages in general? Categorical variable; choices: pro,good,intermediate,poor,none}
- \item{What is your experience level with genomics and RNA-seq data? Categorical variable; choices: pro,good,intermediate,poor,genoWhat?}
- \item{How familiar are you with mogon and parallel computing? Categorical variable; choices: I am a regular user,Once in a while i used it,I know it exists,I heard we had some servers around,Is this supposed to be in the cloud?!}
- \item{What are your expectations from the course? Free text input}
+ \item{Q3: What is your current knowledge level of R? Categorical variable; choices: pro,good,intermediate,poor,none}
+ \item{Q4: What is your knowledge of programming languages in general? Categorical variable; choices: pro,good,intermediate,poor,none}
+ \item{Q5: What is your experience level with genomics and RNA-seq data? Categorical variable; choices: pro,good,intermediate,poor,genoWhat?}
+ \item{Q6: How familiar are you with mogon and parallel computing? Categorical variable; choices: I am a regular user,Once in a while i used it,I know it exists,I heard we had some servers around,Is this supposed to be in the cloud?!}
+ \item{Q7: What are your expectations from the course? Free text input}
 }
 }
 \author{
