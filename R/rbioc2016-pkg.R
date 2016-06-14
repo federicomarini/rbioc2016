@@ -2,6 +2,7 @@
 #'
 #' rbioc2016 contains the following datasets
 #'
+#'
 #' @author
 #' Federico Marini \email{marinif@@uni-mainz.de}, 2016
 #'
