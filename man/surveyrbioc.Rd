@@ -6,7 +6,7 @@
 \title{The results of the pre-course survey}
 \description{
 The results of the pre-course survey, arranged in a \code{data.frame} object. This object contains
-20 responses to 7 questions.
+22 responses to 7 questions.
 }
 \details{
 The following questions were asked to the participants:
