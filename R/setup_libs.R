@@ -42,12 +42,15 @@ setup_day2 <- function(newestR=TRUE){
   day2pkgs <- c("GenomicRanges","TxDb.Mmusculus.UCSC.mm10.knownGene","airway","DESeq2","gplots",
                 "pheatmap","genefilter","topGO","rmarkdown","ggplot2")
 
-  # for the live interactive session
-  if(newestR)
-    biocLite("pcaExplorer")
-  else
-    devtools::install_github("federicomarini/pcaExplorer")
+  biocLite(day2pkgs)
 
+  # for the live interactive session
+  if(newestR) {
+    biocLite("pcaExplorer")
+  } else {
+    biocLite(c("BiocStyle", "rmarkdown", "airway", "org.Hs.eg.db"))
+    devtools::install_github("federicomarini/pcaExplorer",build_vignettes=TRUE)
+  }
   ## optional!
   # biocLite("BSgenome.Mmusculus.UCSC.mm10")
 
