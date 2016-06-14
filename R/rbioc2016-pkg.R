@@ -15,7 +15,8 @@ NULL
 
 #' The results of the pre-course survey
 #'
-#' The results of the pre-course survey, arranged in a \code{data.frame} object.
+#' The results of the pre-course survey, arranged in a \code{data.frame} object. This object contains
+#' 20 responses to 7 questions.
 #'
 #' The following questions were asked to the participants:
 #' \itemize{
