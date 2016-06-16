@@ -26,3 +26,11 @@ affectedpromoterseqs <- getSeq(Mmusculus,affectedpromoters)
 affectedpromoterseqs
 writeXStringSet(affectedpromoterseqs,"affectedpromoterseqs.fasta",width = 50)
 
+
+
+
+mycm <- read.table(system.file("extdata","counts_matrix.csv",package="rbioc2016"),sep=",")
+mydesign <- read.table(system.file("extdata","design_matrix.tsv",package="rbioc2016"),sep="\t")
+
+
+
