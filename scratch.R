@@ -76,3 +76,21 @@ head(resu_monoctrl)
 
 
 
+
+
+plot(-log10(pvalue) ~ log2FoldChange, myresu, pch=20,
+     main="best eruction so far!",ylim=c(0,30))
+     
+with(subset(myresu, padj < 0.05), points(log2FoldChange, -log10(pvalue), col = "red"))
+
+
+with(subset(myresu, abs(log2FoldChange) > 1), points(log2FoldChange, -log10(pvalue), 
+    col = "orange"))
+
+
+with(subset(myresu, padj < 0.05 & abs(log2FoldChange) > 1), points(log2FoldChange, 
+    -log10(pvalue), col = "green"))
+# Add legend
+legend("topright", legend = c("FDR<0.05", "|LFC|>1", "both"), pch = 16, col = c("red", 
+    "orange", "green"))
+
