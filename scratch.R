@@ -34,3 +34,29 @@ mydesign <- read.table(system.file("extdata","design_matrix.tsv",package="rbioc2
 
 
 
+
+
+
+
+
+
+
+mycm2 <- mycm
+mylibs <- colSums(mycm2)/1e6
+mycm2 <- mycm2/mylibs # "counts per million" 
+for (i in unique(mydesign$condition)){
+  print(i)
+  mycm2[[paste0(i,"_avg")]] <- rowMeans(mycm2[,which(i==mydesign$condition)])
+}
+# let's take mono VS ctrl
+plot(mycm2$mono_avg,mycm2$ctrl_avg,pch=16,log="xy")
+mycm2$avg_monoctrl <- rowMeans(mycm2[,c("mono_avg","ctrl_avg")])
+mycm2$log2ratio_monoctrl <- log2(mycm2$mono_avg/mycm2$ctrl_avg)
+plot(mycm2$avg_monoctrl,mycm2$log2ratio_monoctrl,pch=16,log="x")
+abline(h=0, col="grey")
+abline(h=1, col="steelblue")
+abline(h=-1, col="steelblue")
+sum(abs(mycm2$log2ratio_monoctrl) >= 1,na.rm=TRUE)
+
+
+
