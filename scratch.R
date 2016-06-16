@@ -60,3 +60,19 @@ sum(abs(mycm2$log2ratio_monoctrl) >= 1,na.rm=TRUE)
 
 
 
+
+
+
+
+library(rbioc2016)
+library(DESeq2)
+library(pcaExplorer)
+data("dds_microglia")
+dds_microglia
+dds_microglia <- DESeq(dds_microglia)
+rld_microglia <- rlog(dds_microglia)
+resu_monoctrl <- results(dds_microglia,contrast = c("condition","mono","ctrl"))
+head(resu_monoctrl)
+
+
+
