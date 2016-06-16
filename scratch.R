@@ -94,3 +94,26 @@ with(subset(myresu, padj < 0.05 & abs(log2FoldChange) > 1), points(log2FoldChang
 legend("topright", legend = c("FDR<0.05", "|LFC|>1", "both"), pch = 16, col = c("red", 
     "orange", "green"))
 
+
+
+
+
+library(ggplot2)
+ggplotCounts <- function(dds,gene,intgroup="condition",log=TRUE,...){
+  df <- plotCounts(dds,gene,intgroup,returnData = T,...)
+  # genesymbol <- cm2$fromgtf[match(gene,rownames(cm2))]
+  genesymbol <- ""
+  p <- ggplot(df,aes(x=condition,y=count,col=condition)) + 
+    geom_boxplot(outlier.shape = NA) + 
+    labs(title=paste0("Normalized counts for ",genesymbol," - ",gene)) + 
+    scale_x_discrete(name="") +
+    geom_jitter(aes(x=condition,y=count),position = position_jitter(width = 0.1)) + 
+    scale_color_discrete(name="Experimental\nconditions")
+
+  if(log) 
+    p <- p + scale_y_log10(name="Normalized counts - log10 scale",limits=c(1,NA))
+  else 
+    p <- p + scale_y_continuous(name="Normalized counts",limits=c(1,NA))
+  p
+}
+
